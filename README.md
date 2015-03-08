@@ -17,6 +17,7 @@ Currently it can be built by VS2012 for x64 flatform only. This is because the d
 - Download the dependency file and extract the folders inside to project root directory.
 - Open the solution file in `./build/MSVC`
 - Switch build target to x64 platform (Both debug and release are OK).
+- If you CUDA installation directory is not `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\`, in the Solution Explorer right-click on `MainCaller -> Properties -> Configuration Properties -> Linker -> General -> Additional Library Directories` and add the path to the directory `lib\x64` inside your CUDA installation.
 - Include any .cpp you want to build in the `./tools` directory to MainCaller.cpp.
 - Build the code and you may find the `./bin/MainCaller.exe`
 
